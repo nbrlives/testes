@@ -17,3 +17,13 @@ function submitted(){
         return true;
     }
 }
+
+function sum(){
+
+    let a = parseInt(document.forms["formSum"]["num1"].value);
+    let b = parseInt(document.forms["formSum"]["num2"].value);
+
+    alert("sum = " + (a + b));
+
+    return true
+}

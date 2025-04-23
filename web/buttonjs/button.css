@@ -1,4 +1,28 @@
 button{
     margin: 10px 10px 10px 10px;
     background-color: brown;
+    color: wheat;
+}
+
+body{
+    background-color: burlywood;
+}
+
+.submitButton{
+    color: black;
+    background-color: blanchedalmond;
+
+    width: 150px;
+    height: 60px;
+
+    padding: 5px 5px 5px 5px;
+
+    border-radius: 5px;
+    border-color: brown;
+    border-style: outset;
+}
+
+.formBox{
+    align-items:baseline;
+    align-content: center;
 }

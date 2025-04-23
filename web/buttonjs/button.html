@@ -9,18 +9,39 @@
     <body>
         <button onclick="myFunction()">aperta aqui fii</button>
     
+        <div class="formBox">
+            <div class="form">
+                <form 
+                action="button.html"
+                name="formsubmit"
+                onsubmit="return submitted()"
+                method="post">
+            
+                Name: <input type="text" name="fname">
+            </div>
+            <div class="btn">
+                <input type="submit" name="submit" class="submitButton">
+            </div>
+                
+                
+            </form>
+        </div>
+        
+
         <form 
         action="button.html"
-        name="formsubmit"
-        onsubmit="return submitted()"
-        method="post">
+        name="formSum"
+        method="post"
+        onsubmit="return sum()">
         
-        Name: 
-            
-            <input type="text" name="fname">
-            <input type="submit" name="submit">
-            
-        </form>
+        <ul>
+            <li>number 1: <input type="number" name="num1"></li>
+            <li>number 2: <input type="number" name="num2"></li>
+        </ul>
+        <input type="submit" name="submitsum" class="submitButton">
 
+        
+        
+        </form>
     </body>
 </html>
