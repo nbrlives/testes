@@ -1,12 +1,16 @@
+body{
+    background-color: rgb(48, 27, 0);
+}
+
 h1{
-    font-size: 30em;
+    font-size: 15em;
     color:antiquewhite;
     background: 
         url('gradient.png') center;
         background-size: cover;
         background-clip: text;
         color: transparent;
-        animation: animate 10s linear infinite;
+        animation: animate 20s linear infinite;
 }
 
 @keyframes animate {
