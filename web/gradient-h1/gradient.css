@@ -1,0 +1,19 @@
+h1{
+    font-size: 30em;
+    color:antiquewhite;
+    background: 
+        url('gradient.png') center;
+        background-size: cover;
+        background-clip: text;
+        color: transparent;
+        animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+    from{
+        background-position: -200px;
+    }
+
+}
+
+
