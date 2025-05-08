@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 int imcCategory(double height, double weight){
   int category = 0;
@@ -16,16 +17,23 @@ int imcCategory(double height, double weight){
 
 
 void main(){
-  // int category = imcCategory(1.75, 77);
+  int category;
+  double height, weight;
 
-    print(
-      DateTime.parse(DateTime.now().toString())
-    );
+  print("Type here the height: ");
+  height = double.parse(stdin.readLineSync().toString());
 
-/*
+  print("\nType here the weight: ");
+  weight = double.parse(stdin.readLineSync().toString());
+
+
+  category = imcCategory(height, weight);
+
   do{
     switch(category){
-      case 0: print("Dados inválidos");
+      case 0: 
+        print("Dados inválidos");
+        exit(0);
       case 1: print("Abaixo do peso");
       case 2: print("Peso normal");
       case 3: print("Sobrepeso");
@@ -34,6 +42,9 @@ void main(){
       case 6: print("Obesidade grau 3 ou mórbida");
     }
   }while(category == 0);
-*/
 
+
+    print(
+      DateTime.parse(DateTime.now().toString())
+    );
 }
