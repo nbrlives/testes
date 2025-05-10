@@ -1,4 +1,3 @@
-import 'dart:async';
 import 'dart:io';
 
 int imcCategory(double height, double weight){
