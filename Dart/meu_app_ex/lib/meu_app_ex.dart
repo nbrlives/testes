@@ -9,7 +9,7 @@ void execute(){
 
   print("Bem vindo ao sistema de notas!");
 
-  a1 = new Aluno(ConsoleUtils.lerString("Digite o nome do aluno: "));
+  a1 = Aluno(ConsoleUtils.lerString("Digite o nome do aluno: "));
   do{
 
     nota = ConsoleUtils.lerDouble("Digite a nota do aluno ou Sair para sair: ");

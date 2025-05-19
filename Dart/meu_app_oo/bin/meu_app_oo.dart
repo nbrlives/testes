@@ -6,7 +6,7 @@ import 'package:meu_app_oo/service/EnviarNotificacao.dart';
 
 void main(List<String> arguments) {
 
-  Pessoafisica pf1 = new Pessoafisica();
+  Pessoafisica pf1 = Pessoafisica();
 
   print(pf1);
 
@@ -17,7 +17,7 @@ void main(List<String> arguments) {
 
   print(pf1);
 
-  PessoaJuridica pj1 = new PessoaJuridica();
+  PessoaJuridica pj1 = PessoaJuridica();
 
   print(pj1);
 
@@ -28,7 +28,7 @@ void main(List<String> arguments) {
 
   print(pj1);
 
-  EnviarNotificacao notificar = new EnviarNotificacao();
+  EnviarNotificacao notificar = EnviarNotificacao();
 
   notificar.notificar(pf1);
   notificar.notificar(pj1);

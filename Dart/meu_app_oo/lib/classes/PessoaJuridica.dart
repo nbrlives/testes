@@ -4,20 +4,20 @@ class PessoaJuridica extends Pessoa{
   String? _cnpj;
 
   PessoaJuridica(): super(){
-    this._cnpj = "NULL";
+    _cnpj = "NULL";
   }
 
   @override
   String toString() {
     return super.toString() + {
-      "CNPJ": this._cnpj
+      "CNPJ": _cnpj
 
 
     }.toString();
   }
 
-  void setCnpj(String novoCnpj){this._cnpj = novoCnpj;}
-  String getCnpj(){return this._cnpj.toString();}
+  void setCnpj(String novoCnpj){_cnpj = novoCnpj;}
+  String getCnpj(){return _cnpj.toString();}
 
 
 }

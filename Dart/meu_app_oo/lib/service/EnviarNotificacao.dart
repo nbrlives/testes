@@ -12,15 +12,15 @@ class EnviarNotificacao {
     switch (p.getTipoNotificacao()) {
 
       case TipoNotificacao.EMAIL:
-        notificacao = new NotificacaoEmail();        
+        notificacao = NotificacaoEmail();        
         break;
 
       case TipoNotificacao.PUSH_NOTIFICATION:
-        notificacao = new NotificacaoPushNotification();        
+        notificacao = NotificacaoPushNotification();        
         break;
       
       case TipoNotificacao.SMS: 
-        notificacao = new NotificacaoSms();        
+        notificacao = NotificacaoSms();        
         break;
 
       default: break;

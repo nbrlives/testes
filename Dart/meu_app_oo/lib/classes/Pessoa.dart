@@ -10,12 +10,12 @@ abstract class Pessoa{
 
 
   Pessoa(){
-    this._nome = "NULL";
-    this._endereco = "NULL";
-    this._tipoNotificacao = TipoNotificacao.NENHUM;
-    this._email = "NULL";
-    this._celular = "NULL";
-    this._token = "NULL";
+    _nome = "NULL";
+    _endereco = "NULL";
+    _tipoNotificacao = TipoNotificacao.NENHUM;
+    _email = "NULL";
+    _celular = "NULL";
+    _token = "NULL";
   }
 
 
@@ -43,18 +43,18 @@ abstract class Pessoa{
     }.toString();
   }
 
-  String getNome() { return this._nome.toString();}
-  String getEndereco() {return this._endereco.toString();}
-  String getCelular() {return this._celular.toString();}
-  String getEmail() {return this._email.toString();}
-  String getToken() {return this._token.toString();}
-  TipoNotificacao? getTipoNotificacao() {return this._tipoNotificacao;}
+  String getNome() { return _nome.toString();}
+  String getEndereco() {return _endereco.toString();}
+  String getCelular() {return _celular.toString();}
+  String getEmail() {return _email.toString();}
+  String getToken() {return _token.toString();}
+  TipoNotificacao? getTipoNotificacao() {return _tipoNotificacao;}
 
-  void setNome(String novoNome ){this._nome = novoNome;}
-  void setEndereco(String novoEndereco) {this._endereco = novoEndereco;}
-  void setCelular(String novoCelular) {this._celular = novoCelular;}
-  void setEmail(String novoEmail) {this._email = novoEmail;}
-  void setToken(String novoToken) {this._token = novoToken;}
-  void setTipoNotificacao(TipoNotificacao novoTipo) { this._tipoNotificacao = novoTipo;}
+  void setNome(String novoNome ){_nome = novoNome;}
+  void setEndereco(String novoEndereco) {_endereco = novoEndereco;}
+  void setCelular(String novoCelular) {_celular = novoCelular;}
+  void setEmail(String novoEmail) {_email = novoEmail;}
+  void setToken(String novoToken) {_token = novoToken;}
+  void setTipoNotificacao(TipoNotificacao novoTipo) { _tipoNotificacao = novoTipo;}
 
 }

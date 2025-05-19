@@ -26,7 +26,7 @@ class ConsoleUtils{
   }
 
   static double? lerDouble([String texto = ""]){
-    var line;
+    String? line;
 
     do{
 
