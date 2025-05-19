@@ -9,24 +9,20 @@ abstract class Pessoa{
   TipoNotificacao? _tipoNotificacao;
 
 
-  Pessoa(){
-    _nome = "NULL";
-    _endereco = "NULL";
-    _tipoNotificacao = TipoNotificacao.NENHUM;
-    _email = "NULL";
-    _celular = "NULL";
-    _token = "NULL";
+  Pessoa([String nome = "NULL",
+            String endereco = "NULL",
+              TipoNotificacao notificacao = TipoNotificacao.NENHUM,
+                String email = "NULL",
+                  String celular = "NULL",
+                    String token = "NULL"]){
+    _nome = nome;
+    _endereco = endereco;
+    _tipoNotificacao = notificacao;
+    _email = email;
+    _celular = celular;
+    _token = token;
   }
 
-
-/*
-  Pessoa(String nome, String endereco){
-    this._nome = nome;
-    this._endereco = endereco;
-  }
-
-  i still don't know how to do polimorfism in dart
-*/
 
 
   @override

@@ -3,8 +3,8 @@ import 'package:meu_app_oo/classes/Pessoa.dart';
 class PessoaJuridica extends Pessoa{
   String? _cnpj;
 
-  PessoaJuridica(): super(){
-    _cnpj = "NULL";
+  PessoaJuridica([String cnpj = "NULL"]): super(){
+    _cnpj = cnpj;
   }
 
   @override

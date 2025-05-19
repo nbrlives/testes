@@ -4,8 +4,8 @@ class Pessoafisica extends Pessoa{
 
   String? _cpf;
 
-  Pessoafisica(): super(){
-    _cpf = "NULL";
+  Pessoafisica([String cpf = "NULL"]): super(){
+    _cpf = cpf;
   }
 
   @override
